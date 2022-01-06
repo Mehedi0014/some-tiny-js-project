@@ -19,6 +19,7 @@ function addCustomLinkInElementorCarouselOrGallery(){
       let catchImageTagParentNoteUrl = catchImageTagParentNote.href;
       if (catchImageTagParentNoteUrl !== null && catchImageTagParentNoteUrl !== '') {
         catchImageTagParentNote.href = allYoutubeUrlCollection[altIndexNumber];
+        catchImageTagParentNote.setAttribute("target","_blank");
       }
     }
   }
