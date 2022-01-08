@@ -8,8 +8,9 @@ function addCustomLinkInElementorCarouselOrGallery(){
   let allImageAltCollection = ["Petopedia" , "kitchen gadgets"];
   let allYoutubeUrlCollection = ["https://google.com" , "https://fb.com"];
   let allImageAltCollectionLength = allImageAltCollection.length;
-
-  let allImages = document.getElementsByTagName("img");
+  
+  let youtubeLogoGalleryWrapper = document.querySelector(".youtubeLogoGallery");
+  let allImages = youtubeLogoGalleryWrapper.getElementsByTagName("img");
   for( let allImage in allImages){
     let altName = allImages[allImage]["alt"];
     if(allImageAltCollection.includes(altName)){

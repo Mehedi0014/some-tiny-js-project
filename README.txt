@@ -7,6 +7,8 @@ If your uppoer node is not anchor tag then this line: =>
 arn't work. Then you inspect your code and find the anchor tag and modify the line like: =>
   let catchImageTagParentNote = imgNode.parentNode.parentNode.parentNode;
 
+All image wrappe in youtubeLogoGalleryWrapper class. Your class could be something else.
+
 
 
 ===================================================================
