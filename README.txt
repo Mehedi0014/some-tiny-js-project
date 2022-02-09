@@ -15,3 +15,10 @@ All image wrappe in youtubeLogoGalleryWrapper class. Your class could be somethi
 >>> Porject 02
 >>> Find all images where alt tag aren't use
 ===================================================================
+
+
+
+===================================================================
+>>> Porject 03
+>>> Add Preloader in any website
+===================================================================
