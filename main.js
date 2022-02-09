@@ -50,3 +50,38 @@ function getImgNodeWhereWeAreNotUseAlt(){
   }
 }
 getImgNodeWhereWeAreNotUseAlt();
+
+
+
+
+
+/*
+============================================
+>>> Add Preloader in any website
+============================================
+*/
+
+/* Note =============================================================
+    Add a div Immediate after body tag and name the tag Id = "preloader"
+*/
+
+/* CSS Part ============================================================= */
+#preloader {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: black url('https://thumbs.gfycat.com/ZealousFineHochstettersfrog-size_restricted.gif');
+  z-index: 999999999;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20%;
+	transition: all 0.9s ease-out;
+}
+
+/* JS Part ============================================================= */
+window.addEventListener('load', function(){
+  let preloader = document.getElementById('preloader');
+  preloader.style.cssText = "height: 0; transition: all 0.3s ease-out;";
+})
