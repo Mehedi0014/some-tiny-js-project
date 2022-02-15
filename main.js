@@ -80,7 +80,7 @@ getImgNodeWhereWeAreNotUseAlt();
 /*
 ===================================================================
 >>> Porject 03
->>> Add Preloader in any website
+>>> Add Preloader in any website (Find a update version in project 4)
 ===================================================================
 */
 
