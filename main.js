@@ -23,17 +23,19 @@ function addCustomLinkInElementorCarouselOrGallery(){
   let allImageAltCollectionLength = allImageAltCollection.length;
   
   let youtubeLogoGalleryWrapper = document.querySelector(".youtubeLogoGallery");
-  let allImages = youtubeLogoGalleryWrapper.getElementsByTagName("img");
-  for( let allImage in allImages){
-    let altName = allImages[allImage]["alt"];
-    if(allImageAltCollection.includes(altName)){
-      let altIndexNumber = allImageAltCollection.indexOf(altName);
-      let imgNode = allImages[allImage];
-      let catchImageTagParentNote = imgNode.parentNode;
-      let catchImageTagParentNoteUrl = catchImageTagParentNote.href;
-      if (catchImageTagParentNoteUrl !== null && catchImageTagParentNoteUrl !== '') {
-        catchImageTagParentNote.href = allYoutubeUrlCollection[altIndexNumber];
-        catchImageTagParentNote.setAttribute("target","_blank");
+  if(youtubeLogoGalleryWrapper !== null){
+    let allImages = youtubeLogoGalleryWrapper.getElementsByTagName("img");
+    for( let allImage in allImages){
+      let altName = allImages[allImage]["alt"];
+      if(allImageAltCollection.includes(altName)){
+        let altIndexNumber = allImageAltCollection.indexOf(altName);
+        let imgNode = allImages[allImage];
+        let catchImageTagParentNote = imgNode.parentNode;
+        let catchImageTagParentNoteUrl = catchImageTagParentNote.href;
+        if (catchImageTagParentNoteUrl !== null && catchImageTagParentNoteUrl !== '') {
+	  catchImageTagParentNote.href = allYoutubeUrlCollection[altIndexNumber];
+	  catchImageTagParentNote.setAttribute("target","_blank");
+        }
       }
     }
   }
